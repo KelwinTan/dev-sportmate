@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Home';
 import Login from './components/Login';
 import SimpleMap from './components/SimpleMap';
+import Arena from './components/Arena';
 
 
 class App extends Component {
@@ -27,6 +28,9 @@ class App extends Component {
           </Route>
           <Route exact path="/map">
             <SimpleMap />
+          </Route>
+          <Route exact path="/arena">
+            <Arena />
           </Route>
         </Switch>
 
